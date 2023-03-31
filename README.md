@@ -10,18 +10,18 @@
 
 #### Install Apache Spark
 - wget https://dlcdn.apache.org/spark/spark-3.3.2/spark-3.3.2-bin-hadoop2.tgz
-- tar xvf spark-3.3.2-bin-hadoop2.7.tgz
+- tar xvf spark-3.3.2-bin-hadoop2.tgz
 
 #### Move the extracted spark to a relevant directory
-- mv spark-3.3.2-bin-hadoop2.7 /opt/etc/spark
+- mv spark-3.3.2-bin-hadoop2 /etc/opt/spark
 
 #### Set-up the environment for the Spark by editing bashrc file
 - vim ~/.bashrc
 - add the following commands to bashrc file
-- export SPARKHOME=/opt/etc/spark
+- export SPARKHOME=/etc/opt/spark
 - export PATH=$SPARKHOME/bin:$SPARKHOME/sbin
-- run command -> source ~/.bashrc
-- cd /opt/etc/spark/conf
+- activate the changes by the running the command -> source ~/.bashrc
+- cd /etc/opt/spark
 - vim spark-env.sh
 - add the following command to spark-env.sh file → export SPARK_MASTER_HOST=’127.0.0.1’
 
