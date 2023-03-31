@@ -29,3 +29,8 @@
 - start-master.sh
 - browse 127.0.0.1:8080 or localhost:8080(as configured in hosts name list) to see master node page
 
+#### Note
+- You can also add multiple worker nodes on same machine locally with the command -> start-worker.sh <master-url> 
+
+
+
